@@ -1,4 +1,4 @@
-// Fungsi Helper Load Texture (Sudah Support 512x512)
+// Fungsi Helper Load Texture
 function loadTexture(gl, url) {
     const texture = gl.createTexture();
     gl.bindTexture(gl.TEXTURE_2D, texture);
@@ -11,7 +11,7 @@ function loadTexture(gl, url) {
     const border = 0;
     const srcFormat = gl.RGBA;
     const srcType = gl.UNSIGNED_BYTE;
-    const pixel = new Uint8Array([255, 255, 255, 255]); // Putih sementara
+    const pixel = new Uint8Array([255, 255, 255, 255]); // Putih
     gl.texImage2D(gl.TEXTURE_2D, level, internalFormat, width, height, border, srcFormat, srcType, pixel);
 
     const image = new Image();
@@ -19,7 +19,7 @@ function loadTexture(gl, url) {
         gl.bindTexture(gl.TEXTURE_2D, texture);
         gl.texImage2D(gl.TEXTURE_2D, level, internalFormat, srcFormat, srcType, image);
 
-        // Aktifkan REPEAT dan MIPMAP (Wajib gambar 512x512)
+        // Aktifkan REPEAT dan MIPMAP untuk gambar 512x512
         gl.generateMipmap(gl.TEXTURE_2D);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.REPEAT);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.REPEAT);
@@ -33,18 +33,18 @@ function main(){
     var canvas = document.getElementById("myCanvas");
     var gl = canvas.getContext("webgl");
 
-    // --- 1. SETUP BUFFER ---
+    // SETUP BUFFER
     var vertexBuffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
 
-    // --- 2. SETUP SHADERS ---
+    // SETUP SHADERS 
     var vertexShaderCode = document.getElementById("vertexShaderCode").text;
     var vertexShader = gl.createShader(gl.VERTEX_SHADER);
     gl.shaderSource(vertexShader, vertexShaderCode);
     gl.compileShader(vertexShader);
 
-    // --- FRAGMENT SHADER BARU (TANPA WARNA MERAH/BIRU/HIJAU) ---
+    // FRAGMENT SHADER
     var fragmentShaderCode = `  
         precision mediump float;
         varying vec3 vPosition;

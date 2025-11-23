@@ -3,7 +3,7 @@
  * Struktur per vertex: [Posisi(X, Y, Z), Warna(R, G, B), Normal(X, Y, Z)]
  */
 var vertices = [
-    // HURUF L (Merah) - BALOK VERTIKAL
+    // HURUF L - BALOK VERTIKAL
     // Sisi Depan (Normal Z+)
     -1.5, -0.5, 0.2,   1, 0, 0,   0, 0, 1,
     -1.2, -0.5, 0.2,   1, 0, 0,   0, 0, 1,
@@ -47,7 +47,7 @@ var vertices = [
     -1.5, 0.5, -0.2,   1, 0, 0,   -1, 0, 0,
     -1.5, -0.5, -0.2,   1, 0, 0,   -1, 0, 0,
 
-    // HURUF L (Merah) - BALOK HORIZONTAL
+    // HURUF L - BALOK HORIZONTAL
     // Sisi Depan (Normal Z+)
     -1.5, -0.5, 0.2,   1, 0, 0,   0, 0, 1,
     -1.0, -0.5, 0.2,   1, 0, 0,   0, 0, 1,
@@ -91,7 +91,7 @@ var vertices = [
     -1.5, -0.3, -0.2,   1, 0, 0,   -1, 0, 0,
     -1.5, -0.5, -0.2,   1, 0, 0,   -1, 0, 0,
 
-    // HURUF E (Biru) - BALOK VERTIKAL
+    // HURUF E - BALOK VERTIKAL
     // Sisi Depan (Normal Z+)
     -0.5, -0.5, 0.2,   0, 0, 1,   0, 0, 1,
     -0.2, -0.5, 0.2,   0, 0, 1,   0, 0, 1,
@@ -135,7 +135,7 @@ var vertices = [
     -0.5, 0.5, -0.2,   0, 0, 1,   -1, 0, 0,
     -0.5, -0.5, -0.2,   0, 0, 1,   -1, 0, 0,
 
-    // HURUF E (Biru) - BALOK HORIZONTAL ATAS
+    // HURUF E - BALOK HORIZONTAL ATAS
     // Sisi Depan (Normal Z+)
     -0.5, 0.3, 0.2,   0, 0, 1,   0, 0, 1,
     0.2, 0.3, 0.2,   0, 0, 1,   0, 0, 1,
@@ -179,7 +179,7 @@ var vertices = [
     -0.5, 0.5, -0.2,   0, 0, 1,   -1, 0, 0,
     -0.5, 0.3, -0.2,   0, 0, 1,   -1, 0, 0,
 
-    // HURUF E (Biru) - BALOK HORIZONTAL TENGAH
+    // HURUF E  - BALOK HORIZONTAL TENGAH
     // Sisi Depan (Normal Z+)
     -0.5, -0.1, 0.2,   0, 0, 1,   0, 0, 1,
     0.1, -0.1, 0.2,   0, 0, 1,   0, 0, 1,
@@ -223,7 +223,7 @@ var vertices = [
     -0.5, 0.1, -0.2,   0, 0, 1,   -1, 0, 0,
     -0.5, -0.1, -0.2,   0, 0, 1,   -1, 0, 0,
 
-    // HURUF E (Biru) - BALOK HORIZONTAL BAWAH
+    // HURUF E - BALOK HORIZONTAL BAWAH
     // Sisi Depan (Normal Z+)
     -0.5, -0.5, 0.2,   0, 0, 1,   0, 0, 1,
     0.2, -0.5, 0.2,   0, 0, 1,   0, 0, 1,
@@ -267,7 +267,7 @@ var vertices = [
     -0.5, -0.3, -0.2,   0, 0, 1,   -1, 0, 0,
     -0.5, -0.5, -0.2,   0, 0, 1,   -1, 0, 0,
 
-    // ANGKA 4 (Hijau) - BALOK VERTIKAL PANJANG
+    // ANGKA 4 - BALOK VERTIKAL PANJANG
     // Sisi Depan (Normal Z+)
     1.3, -0.5, 0.2,   0, 1, 0,   0, 0, 1,
     1.6, -0.5, 0.2,   0, 1, 0,   0, 0, 1,
@@ -311,7 +311,7 @@ var vertices = [
     1.3, 0.5, -0.2,   0, 1, 0,   -1, 0, 0,
     1.3, -0.5, -0.2,   0, 1, 0,   -1, 0, 0,
 
-    // ANGKA 4 (Hijau) - BALOK VERTIKAL PENDEK
+    // ANGKA 4 - BALOK VERTIKAL PENDEK
     // Sisi Depan (Normal Z+)
     0.9, 0.1, 0.2,   0, 1, 0,   0, 0, 1,
     1.2, 0.1, 0.2,   0, 1, 0,   0, 0, 1,
@@ -355,7 +355,7 @@ var vertices = [
     0.9, 0.5, -0.2,   0, 1, 0,   -1, 0, 0,
     0.9, 0.1, -0.2,   0, 1, 0,   -1, 0, 0,
 
-    // ANGKA 4 (Hijau) - BALOK HORIZONTAL
+    // ANGKA 4 - BALOK HORIZONTAL
     // Sisi Depan (Normal Z+)
     0.9, -0.1, 0.2,   0, 1, 0,   0, 0, 1,
     1.6, -0.1, 0.2,   0, 1, 0,   0, 0, 1,
